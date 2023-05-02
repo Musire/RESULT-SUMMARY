@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lightred: 0 100% 67%;
+  --orangeyellow: 39 100% 56%;
+  --greenteal: 166 100% 37%;
+  --cobaltblue: 234 85% 45%;
+  --slateblue: 252 100% 67%;
+  --royalblue: 241 81% 54%;
+  --violetblue: 256 72% 46% 1;
+  --persianblue: 241 72% 46% 0;
+  --paleblue: 221 100% 96%;
+  --lightlavender: 241 100% 89%;
+  --darkgrayblue: 224 30% 27%;
+  --silver: #d9d9d9;
+  --mid: #979797;
+  --smoke: #848884;
+  --dark: #444444;
+  --darker: #0A0708;
+  --deep: #030303;
+  --deeper: #000300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    background-color: var(--silver);
+    color: var(--silver);
+    overflow-x: hidden;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: .75em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--dark);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--palered);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--brightred);
+    transition-duration: 2s;
+  }
+}
+
+@layer components {
+  /*Flex Box Preset*/
+  .centered {
+      @apply flex flex-row justify-center items-center
+  }
+
+  .centered-col {
+      @apply flex flex-col justify-center items-center
+  }
+
+  .spaced {
+      @apply flex flex-row justify-between items-center
+  }
+
+  .spaced-col {
+      @apply flex flex-col justify-between items-center
+  }
+
+  .evenly {
+      @apply flex flex-row justify-evenly items-center
+  }
+
+  .evenly-col {
+    @apply flex flex-col justify-evenly items-center
+  }
+
+  .invisilink {
+      @apply relative collapse
+  }
+
+  /*Containers*/
+
+  .section-container {
+      @apply w-full min-h-[50vh] h-auto centered
+  }
+
+  .block-container {
+    @apply xs:w-5/6 lg:w-4/5 desktop:w-4/5 h-auto
+  }
+
+  .portion-container {
+    @apply min-h-[20vh] xs:min-h-[20vh] lg:h-[30vh] w-screen h-auto centered
+  }
+
+  .content-container {
+    @apply h-[calc(100vh-4rem)] md:h-[calc(100vh-6rem)] centered-col md:centered w-full bg-white mt-16 md:mt-24
+  }
+
+  /*Transitions*/
+
+  .easy-transition {
+    @apply duration-300 ease-in-out hover:cursor-pointer
+  }
+
+  .slow-transition {
+    @apply duration-700 ease-in-out hover:cursor-pointer
+  }
+
+  .slugish-transition {
+    @apply duration-1000 ease-in-out hover:cursor-pointer
+  }
+
+  .bg-img {
+    @apply bg-center bg-no-repeat
+  }
+
+}
