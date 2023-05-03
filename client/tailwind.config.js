@@ -19,7 +19,7 @@ export default {
         slateblue: 'hsl(var(--slateblue) / <alpha-value>)',
         royalblue: 'hsl(var(--royalblue) / <alpha-value>)',
         violetblue: 'hsla(256, 72%, 46%, 1)',
-        persianblue: 'hsla(241, 72%, 46%, 0.5)',
+        persianblue: 'hsla(241, 72%, 46%, 0)',
         paleblue: 'hsl(var(--paleblue) / <alpha-value>)',
         lightlavender: 'hsl(var(--lightlavender) / <alpha-value>)',
         darkgrayblue: 'hsl(var(--darkgrayblue) / <alpha-value>)',
@@ -61,8 +61,10 @@ export default {
         '320': '80rem',
       },
       backgroundImage: {
-        'icon-close': "url('./assets/icon-close.svg')",
-        'icon-menu': "url('./assets/icon-menu.svg')"
+        'icon-memory': "url('./assets/icon-memory.svg')",
+        'icon-reaction': "url('./assets/icon-reaction.svg')",
+        'icon-verbal': "url('./assets/icon-verbal.svg')",
+        'icon-visual': "url('./assets/icon-visual.svg')",
       },
     },
   },

@@ -29,8 +29,8 @@ html {
 
 @layer base {
   body {
-    background-color: var(--silver);
-    color: var(--silver);
+    background-color: white;
+    color: white;
     overflow-x: hidden;
     font-family: 'Hanken Grotesk', sans-serif;
   }
